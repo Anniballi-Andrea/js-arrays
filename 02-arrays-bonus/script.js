@@ -37,22 +37,35 @@ const newTeachers = [];
 const exTeacher= 'Ed';
 
 for (let i = 0; i < teachers.length; i++) {
-  const teacher = array[i];
+  const teacher = teachers[i];
   if(teacher !== exTeacher){
     newTeachers.push(teacher)
   }
   
 }
 
-teachers= newTeachers;
 
-console.log(teachers);
+
+console.log(newTeachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
+let isFabioPresent = null;
 
-const isFabioPresent = null;
+for (let i = 0; i < teachers.length; i++) {
+  const teacher = teachers[i];
+  if (teacher == 'Fabio') {
+    isFabioPresent = true;
+    break;
+
+  } else {
+    isFabioPresent = false
+
+  }
+  console.log(isFabioPresent)
+}
+
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = null;
